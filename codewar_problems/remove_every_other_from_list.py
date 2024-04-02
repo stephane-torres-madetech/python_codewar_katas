@@ -5,6 +5,12 @@ Example:
 
 None of the arrays will be empty, so you don't have to worry about that! """
 
+
+
 def remove_every_other(array: list):
-    array.pop(1)
+    for index in range(len(array)):
+        print(index)
+        if index % 2 != 0:
+            array.pop(index)
+
     return array
