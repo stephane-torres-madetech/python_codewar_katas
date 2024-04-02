@@ -17,3 +17,6 @@ def test_with_three_elements():
 def test_with_four_or_more_elements():
     assert get_sum_from_list([1, 2, 3, 4]) == 5
     assert get_sum_from_list([10, 20, 30, 40, 50]) == 90
+
+def test_with_unsorted_lists_with_more_than_three_elements():
+    assert get_sum_from_list([2, 4, 3, 1]) == 5
