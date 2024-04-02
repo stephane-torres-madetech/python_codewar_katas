@@ -24,6 +24,7 @@ def get_sum_from_list(list :list):
         return 0
     
     if len(list) >= 3:
+        list.sort()
         list.pop(0)
         list.pop(-1)
         total = 0
