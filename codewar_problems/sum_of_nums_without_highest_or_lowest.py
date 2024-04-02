@@ -23,4 +23,11 @@ def get_sum_from_list(list :list):
     if len(list) < 3:
         return 0
     
-    return list[1] + list[2]
+    if len(list) >= 3:
+        list.pop(0)
+        list.pop(-1)
+        total = 0
+        for number in list:
+            total += number
+
+        return total
