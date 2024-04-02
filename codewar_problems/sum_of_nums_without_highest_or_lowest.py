@@ -16,4 +16,11 @@ or the given array is an empty list or a list with only 1 element, return 0.
 """
 
 def get_sum_from_list(list :list):
-    return 0
+
+    if list == None:
+        return 0
+    
+    if len(list) < 3:
+        return 0
+    
+    return list[1]
