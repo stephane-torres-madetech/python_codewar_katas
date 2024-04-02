@@ -18,4 +18,13 @@ cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting
  """
 
 def enough_room(cap, on, wait):
-    return 0
+    if on + wait < cap:
+        return 0
+    
+    return (on + wait) - cap
+
+""" 
+def enough(cap, on, wait):
+    return wait + on - cap if wait + on > cap else 0
+    REMEMBER THIS SYNTAX!
+ """
