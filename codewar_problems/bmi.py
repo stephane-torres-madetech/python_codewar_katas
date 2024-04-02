@@ -24,3 +24,7 @@ def bmi(weight, height):
             return bmi_dictionary[weight]
         
     return "Obese"
+
+"""  return ['Underweight', 'Normal', 'Overweight', 'Obese'][(b > 30) + (b > 25) + (b > 18.5)]
+
+seen this solution, don't understand the syntax """
