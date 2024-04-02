@@ -8,9 +8,4 @@ None of the arrays will be empty, so you don't have to worry about that! """
 
 
 def remove_every_other(array: list):
-    for index in range(len(array)):
-        print(index)
-        if index % 2 != 0:
-            array.pop(index)
-
-    return array
+   return array[0: len(array): 2]
