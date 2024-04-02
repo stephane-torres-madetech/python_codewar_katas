@@ -10,3 +10,6 @@ def test_lists_with_only_one_element():
 def test_lists_with_only_two_elements():
     assert get_sum_from_list([3, 5]) == 0
     assert get_sum_from_list([-3, -5]) == 0
+
+def test_with_three_elements():
+    assert get_sum_from_list([1, 2, 3]) == 2
