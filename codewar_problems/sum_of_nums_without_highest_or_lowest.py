@@ -23,4 +23,4 @@ def get_sum_from_list(list :list):
     if len(list) < 3:
         return 0
     
-    return list[1]
+    return list[1] + list[2]
