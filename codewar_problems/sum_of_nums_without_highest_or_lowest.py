@@ -33,15 +33,15 @@ def get_sum_from_list(list :list):
 
         return total
     """ 
-     def sum_array(arr):
     return sum(sorted(arr)[1:-1]) if arr else 0
+
+    return sum(sorted(arr or [])[1:-1])
 
     a sum method exists so don't need a for loop
     can using slicing to remove fist and last elements
     and can use the if statement within the return statement
      
     also min max methods
-    def sum_array(arr):
     if arr == None or len(arr) < 3:
         return 0
     return sum(arr) - max(arr) - min(arr)
