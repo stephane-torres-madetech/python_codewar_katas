@@ -4,4 +4,4 @@
     Spaces will be included only when more than one word is present. """
 
 def spin_words(sentence):
-    return None
+    return sentence
