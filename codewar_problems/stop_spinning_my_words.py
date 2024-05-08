@@ -13,7 +13,6 @@ def spin_words(sentence: str):
         if len(word) > 5:
             word = word[::-1]
         
-        spun_string += word
+        spun_string += word + ' '
 
-    
-    return spun_string
+    return spun_string.strip()
