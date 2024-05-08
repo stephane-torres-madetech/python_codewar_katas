@@ -3,5 +3,17 @@
     Strings passed in will consist of only letters and spaces. 
     Spaces will be included only when more than one word is present. """
 
-def spin_words(sentence):
-    return sentence
+def spin_words(sentence: str):
+
+    spun_string = ''
+
+    list_words = sentence.split()
+
+    for word in list_words:
+        if len(word) > 5:
+            word = word[::-1]
+        
+        spun_string += word
+
+    
+    return spun_string
