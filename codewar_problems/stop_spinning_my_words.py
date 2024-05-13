@@ -10,9 +10,11 @@ def spin_words(sentence: str):
     list_words = sentence.split()
 
     for word in list_words:
-        if len(word) > 5:
+        if len(word) >= 5:
             word = word[::-1]
         
         spun_string += word + ' '
 
     return spun_string.strip()
+
+# return " ".join([x[::-1] if len(x) >= 5 else x for x in sentence.split(" ")])
