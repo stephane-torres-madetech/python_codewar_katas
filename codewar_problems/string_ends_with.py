@@ -5,7 +5,9 @@ def string_ends_with(text, ending):
 
     text_end = text[-len(ending):]
     return text_end == ending
-    return True
+
+    # could be written return text[-len(ending):] == ending gets rid on another variable declaration.
+  
 
 
     # python has an endswith method!!!
