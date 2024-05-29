@@ -6,3 +6,5 @@ def test_abc_ends_with_bc():
 def test_abc_does_not_end_with_d():
     assert string_ends_with("abc", "d") == False
 
+def test_samurai_does_end_ra():
+    assert string_ends_with("samurai", "ra") == False
