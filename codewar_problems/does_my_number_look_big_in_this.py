@@ -19,18 +19,16 @@ Error checking for text strings or other invalid inputs is not required, only va
 so want to take a number, split into individual digits, raise each of these to the power of the original numbers length? 
 helper function to split number and return an array """
 
-def narcissistic(number):
+def narcissistic(value):
 
-    length = len(str(number))
+    length = len(str(value))
+    number_list = split(value)
+    total = 0
 
-    number_list = split(number)
-    modified_number_list = []
-
-    # remember naming classes in for loops
     for digit in number_list:
-        modified_number_list.append(digit ** length)
+        total += digit ** length
 
-    return sum_array(modified_number_list) == number
+    return total == value
 
 def split(number):
     
@@ -42,6 +40,9 @@ def split(number):
 
     return number_list
 
+
+
+# no longer needed
 def sum_array(list):
     result = 0
 
