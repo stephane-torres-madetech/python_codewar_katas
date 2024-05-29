@@ -6,3 +6,6 @@ def string_ends_with(text, ending):
     text_end = text[-len(ending):]
     return text_end == ending
     return True
+
+
+    # python has an endswith method!!!
