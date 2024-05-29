@@ -49,3 +49,15 @@ def sum_array(list):
         result += number
 
     return result
+
+""" You're already looping over the string of the number so can do calculation while there instead of storing everything! """
+
+
+"""   
+
+    value = str(value)
+    size = len(value)
+    sum = 0
+    for i in value:
+        sum += int(i) ** size
+    return sum == int(value) """
